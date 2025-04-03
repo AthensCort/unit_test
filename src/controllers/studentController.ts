@@ -1,4 +1,7 @@
+//Carolina de Jesus Ortega Cepeda
+//A01282386
 import StudentService from "../db/studentModel";
+
 
 class StudentController {
   private studentService;
@@ -10,9 +13,9 @@ class StudentController {
   getAllStudents() {
     const estudiantes = this.studentService.getAllStudents();
 
-    return estudiantes.map((alumno) => {
+    return estudiantes.map((alumno:any) => {
       let mensaje = "";
-
+            //Los mensajes que se tienen que poner dependiendo lo que pide
       if (alumno.calificacion > 90) {
         mensaje = alumno.adeudos
           ? "Tenías honores pero tienes un adeudo."
