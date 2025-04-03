@@ -2,7 +2,7 @@
 //Carolina Ortega A01282386
 
 import { Router } from "express";
-import StudentHttpHandler from "../handlers/studentHandler";
+import StudentHttpHandler from "../../handlers/studentHandler";
 
 const studentHandler = new StudentHttpHandler();
 const router = Router();
